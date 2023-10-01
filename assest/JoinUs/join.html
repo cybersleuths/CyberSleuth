@@ -133,7 +133,7 @@
         function validateDepartment() {
             var dept = document.getElementById('dept').value;
             if (!/^[A-Za-z\s]+$/.test(dept)) {
-                alert('Please enter a valid department name using alphabetic characters only.');
+                alert('Please enter valid department name! Ex: CSE');
                 valid = false;
             }
             return true;
