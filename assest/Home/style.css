@@ -304,12 +304,14 @@ section {
     }
 
     header .navigation {
+        flex-direction: row;
         margin-top: 10px; 
     }
 
     header .navigation .navigation-items {
         flex-direction: row;
-        align-items: center; 
+        align-items: center;
+        margin-top: 0;
     }
 
     header .navigation .navigation-items a {
@@ -326,7 +328,7 @@ section {
     }
 }
 
-@media (max-width: 365px) {
+@media only screen and (max-width: 365px) {
 
     header {
         padding: 15px;
@@ -378,7 +380,7 @@ section {
     }
 
     header .navigation .navigation-items {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
