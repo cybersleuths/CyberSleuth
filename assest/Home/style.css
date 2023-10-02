@@ -207,12 +207,20 @@ section {
 
 @media (max-width: 1040px) {
     header {
-        padding: 12px 20px;
+        padding: 6px 20px;
         transition: 0.5s ease;
     }
 
+    .logo {
+        max-width: 80px;
+    }
+
+    header .title {
+        font-size: 1.8em;
+    }
+
     section {
-        padding: 60px 20px;
+        padding: 50px 20px;
     }
 
     .home .media-icons {
@@ -237,8 +245,8 @@ section {
 
     header .navigation .navigation-items a {
         color: #222;
-        font-size: 1.2em;
-        margin: 20px;
+        font-size: 0.9em;
+        margin: 15px;
     }
 
     header .navigation .navigation-items a:before {
@@ -281,6 +289,41 @@ section {
 
     .footer {
         padding: 2rem 3%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    header .title {
+        margin-top: 0;
+    }
+
+    header .navigation {
+        margin-top: 10px; 
+    }
+
+    header .navigation .navigation-items {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    header .navigation .navigation-items a {
+        margin-left: 0; 
+        margin-bottom: 10px; 
+    }
+
+    section {
+        padding: 50px 10px;
+    }
+
+    .home .content {
+        width: 70%;
+        text-align: justify;
     }
 }
 
