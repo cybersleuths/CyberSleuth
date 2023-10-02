@@ -308,13 +308,12 @@ section {
     }
 
     header .navigation .navigation-items {
-        flex-direction: column;
-        align-items: flex-start; 
+        flex-direction: row;
+        align-items: center; 
     }
 
     header .navigation .navigation-items a {
-        margin-left: 0; 
-        margin-bottom: 10px; 
+        margin: 0 15px; 
     }
 
     section {
@@ -328,6 +327,32 @@ section {
 }
 
 @media (max-width: 365px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        max-width: 60px;
+    }
+
+    header .title {
+        font-size: 1.5em;
+    }
+
+    header .navigation .navigation-items a {
+        font-size: 0.8em;
+    }
+
+    section,
+    .home {
+        padding: 50px 10px;
+    }
+
+    .home .content {
+        width: 100%;
+    }
+
     .footer {
         flex-direction: column-reverse;
     }
@@ -337,15 +362,52 @@ section {
         margin-top: 2rem;
     }
 }
+
+@media only screen and (min-width: 366px) and (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+
+    header .title {
+        font-size: 1.8em; 
+    }
+
+    header .navigation .navigation-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .navigation .navigation-items a {
+        font-size: 1em; 
+        margin: 5px 0; 
+    }
+
+    section,
+    .home {
+        padding: 50px 20px;
+    }
+
+    .home .content {
+        width: 100%;
+    }
+}
+
 .headerLeft{
     display: flex;
     flex-direction: row;
 }
+
 .footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .footer img{
     height: 2rem;
     margin-right: 1rem;
