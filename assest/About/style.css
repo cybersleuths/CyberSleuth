@@ -68,6 +68,11 @@ header .navigation .navigation-items a:hover:before {
     text-align: left;
 }
 
+.about:hover .content h1{
+    transform: scale(1.5);
+    transition: 0.3s ease;
+}
+
 .about .content h1{
     font-size: 2em;
     font-weight: 900;
@@ -98,7 +103,7 @@ header .navigation .navigation-items a:hover:before {
 }
 
 .about .content .container .box{
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.5);
     color: #fff;
     padding: 20px;
     border-radius: 5px;
