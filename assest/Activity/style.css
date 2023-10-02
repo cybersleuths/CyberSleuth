@@ -52,7 +52,7 @@ header .navigation .navigation-items a:hover:before {
 
 .news-container {
     position: fixed;
-    top: 5rem;
+    top: 6rem;
     left: 0;
     right: 0;
     font-family: "Roboto", sans-serif;
@@ -119,27 +119,18 @@ header .title a{
 .activity h1{
     text-align: center;
     color: red;
+    font-size: 1.2em;
 }
 
 .activity h2{
     text-align: center;
     color: #fff;
-}
-
-.about .content h1{
-    font-size: 2em;
-    font-weight: 900;
-    color: #04AC2F;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 50px;
-    margin-bottom: 2px;
-    text-align: center;
+    font-size: larger;
 }
 
 .activity .content p{
     margin-bottom: 20px;
-    color: #fff;
+    color: lightblue;
     text-align: justify;
 }
 
@@ -155,12 +146,12 @@ header .title a{
 }
 
 .activity .content .container .box{
-    background-color: #497D60;
+    background-color: rgba(51, 51, 51, 0.5);
     color: #fff;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .activity .content .container .box h2{
