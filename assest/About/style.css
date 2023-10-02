@@ -68,6 +68,11 @@ header .navigation .navigation-items a:hover:before {
     text-align: left;
 }
 
+.about:hover .content h1{
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+
 .about .content h1{
     font-size: 2em;
     font-weight: 900;
@@ -98,7 +103,7 @@ header .navigation .navigation-items a:hover:before {
 }
 
 .about .content .container .box{
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.5);
     color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -184,5 +189,117 @@ header .navigation .navigation-items a:hover:before {
     section .about{
         background-size: cover;
         background-attachment: fixed;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        max-width: 60px;
+    }
+
+    header .title {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+
+    header .navigation {
+        margin-top: 10px;
+    }
+
+    header .navigation .navigation-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .navigation .navigation-items a {
+        font-size: 0.8em;
+        margin: 5px 0;
+    }
+
+    section,
+    .home {
+        padding: 50px 10px;
+    }
+
+    .home .content {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 366px) and (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+
+    header .title {
+        font-size: 1.8em;
+    }
+
+    header .navigation {
+        margin-top: 10px;
+    }
+
+    header .navigation .navigation-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .navigation .navigation-items a {
+        font-size: 1em;
+        margin: 5px 0;
+    }
+
+    section,
+    .home {
+        padding: 50px 20px;
+    }
+
+    .home .content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .title {
+        margin-top: 0;
+    }
+
+    header .navigation {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navigation .navigation-items {
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    header .navigation .navigation-items a {
+        margin: 0 15px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .home .content {
+        width: 70%;
     }
 }
